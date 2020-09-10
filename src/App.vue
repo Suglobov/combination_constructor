@@ -1,18 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <!-- <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/> -->
+    <BasketballHalfPlayground></BasketballHalfPlayground>
   </div>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
 import HelloWorld from './components/HelloWorld.vue';
+import BasketballHalfPlayground from './components/bascketball/BasketballHalfPlayground.vue';
 
 @Options({
-  components: {
-    HelloWorld,
-  },
+    components: {
+        HelloWorld,
+        BasketballHalfPlayground,
+    },
 })
 export default class App extends Vue {}
 </script>
